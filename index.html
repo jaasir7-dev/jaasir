@@ -1,109 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Portfolio of [Your Name] — developer, designer, builder." />
-  <title> Jaasir — Portfolio</title>
-
-  <!-- Optional: swap for your preferred font or remove -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaasir — Portfolio</title>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">[Your Name]</a>
 
-      <nav class="nav" aria-label="Main navigation">
-        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
-        <ul id="nav-list" class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><button id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark</button></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Jaasir</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact" class="btn-nav">Contact</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
+    </nav>
 
-  <main>
-    <section class="hero" id="home" aria-labelledby="hero-heading">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <h1 id="hero-heading">Hi, I'm [Your Name]</h1>
-          <p class="lead">I build clean, maintainable web apps and delightful user experiences.</p>
-          <p>
-            <a class="btn" href="#projects">See my work</a>
-            <a class="btn btn-ghost" href="#contact">Get in touch</a>
-          </p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Available for opportunities</span>
+            <h1>Hi, I'm <span class="highlight">Jaasir</span>.</h1>
+            <p>I build clean, maintainable web applications, explore data systems, and design intuitive user experiences.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Get In Touch</a>
+            </div>
         </div>
+    </header>
 
-        <div class="hero-card" aria-hidden="false">
-          <!-- Replace placeholder image with your photo or SVG -->
-          <img src="https://via.placeholder.com/320x320.png?text=Photo" alt="[Your Name]" class="profile-photo">
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p class="section-desc">
+            Passionate about software development, systems, and problem-solving. I focus on creating modern digital solutions with clean code and minimalist design.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A minimal, high-performance developer portfolio built with HTML, CSS, and hosted on GitHub Pages.</p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>GitHub Pages</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">Live Demo &rarr;</a>
+                    <a href="#" target="_blank">Source Code &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Data Analysis & Automation</h3>
+                <p>Python script collection analyzing datasets and generating automated insights using Pandas.</p>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Data</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">View Project &rarr;</a>
+                </div>
+            </div>
+
         </div>
-      </div>
     </section>
 
-    <section id="about" class="section container">
-      <h2>About</h2>
-      <p>Short intro about you — what you build, your focus, and what makes you different. Keep it 2–4 sentences.</p>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills & Tools</h2>
+        <div class="skills-grid">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">HTML / CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">Networking Protocols</span>
+        </div>
     </section>
 
-    <section id="projects" class="section container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <!-- Project card template: copy/replace -->
-        <article class="project-card">
-          <h3 class="project-title">Project One</h3>
-          <p class="project-desc">A one-sentence description of the project and tech used.</p>
-          <p class="project-links">
-            <a href="#" class="link">Live</a>
-            <a href="#" class="link">Code</a>
-          </p>
-        </article>
-
-        <article class="project-card">
-          <h3 class="project-title">Project Two</h3>
-          <p class="project-desc">Short description and impact or highlight.</p>
-          <p class="project-links">
-            <a href="#" class="link">Live</a>
-            <a href="#" class="link">Code</a>
-          </p>
-        </article>
-
-        <!-- Add more project cards as needed -->
-      </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2>Let's Connect</h2>
+        <p>Feel free to reach out for collaborations or just a chat!</p>
+        <a href="mailto:your-email@example.com" class="btn primary">Send an Email</a>
     </section>
 
-    <section id="skills" class="section container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>JavaScript / TypeScript</li>
-        <li>React / Vue / Svelte</li>
-        <li>HTML & CSS — responsive design</li>
-        <li>Node, APIs, Databases</li>
-      </ul>
-    </section>
+    <footer>
+        <p>&copy; 2026 Jaasir. Built with simplicity in mind.</p>
+    </footer>
 
-    <section id="contact" class="section container">
-      <h2>Contact</h2>
-      <p>I'm available for freelance and full-time roles. Send a note — or use the email link below.</p>
-      <p>
-        <a class="btn" href="mailto:you@example.com">you@example.com</a>
-      </p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> [Your Name]. Built with care.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
