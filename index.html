@@ -12,33 +12,124 @@
 <body>
 
     <!-- Hero Section with Background -->
-    <header class="hero-container">
-        <!-- Overlay -->
+    <header class="hero-container" id="hero">
+        <div class="hero-bg" id="heroBg"></div>
         <div class="overlay"></div>
 
-        <!-- Navigation Bar -->
+        <!-- Navigation Bar (4 Links Only) -->
         <nav class="navbar">
             <div class="logo">Jaasir</div>
             <ul class="nav-links">
-                <li><a href="#home" class="active">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#education">EDUCATION</a></li>
                 <li><a href="#work">WORK</a></li>
-                <li><a href="#clients">CLIENTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
 
         <!-- Centered Hero Content -->
         <div class="hero-content">
-            <div class="profile-avatar">
-                <!-- Points to your uploaded LinkedIn DP file -->
+            <div class="profile-avatar" id="profileDp" title="Click me!">
                 <img src="LinkedIn DP.jpeg" alt="Jaasir Profile">
             </div>
             <h1>Hi, I'm Jaasir</h1>
-            <p class="subtitle">I'M A SOFTWARE DEVELOPER</p>
+            <p class="subtitle">SOFTWARE DEVELOPER & ICT UNDERGRADUATE</p>
         </div>
     </header>
 
+    <!-- Main Content Container -->
+    <main class="content-section">
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="card">
+                <p>I am a Year 2 Information & Communication Technology undergraduate at the Singapore University of Social Sciences (SUSS), driven by a long-standing fascination with how technology shapes our world. My academic foundation is paired with hands-on experience spanning software development, network protocols, and hardware infrastructure.</p>
+                <p>Through my role as a Desktop Engineer within Singapore’s public education sector, I have developed strong, practical expertise in full-lifecycle IT troubleshooting, system maintenance, and managing end-user computing devices in fast-paced environments. Additionally, my background in technology retail has sharpened my communication, active listening, and client-facing skills, enabling me to translate complex technical concepts into accessible solutions for diverse stakeholders.</p>
+                <p>I am an adaptable and collaborative problem solver, eager to leverage my technical skills and strong interpersonal dynamics to contribute to impactful IT initiatives.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="card-grid">
+                <div class="card edu-card">
+                    <div class="edu-header">
+                        <h3>Singapore University of Social Sciences (SUSS)</h3>
+                        <span class="date">Jul 2025 – May 2029</span>
+                    </div>
+                    <p class="degree">Bachelor of Science in Information and Communication Technology, Information Technology</p>
+                </div>
+
+                <div class="card edu-card">
+                    <div class="edu-header">
+                        <h3>Temasek Polytechnic</h3>
+                        <span class="date">Apr 2020 – Apr 2023</span>
+                    </div>
+                    <p class="degree">Diploma of Education, Cyber/Computer Forensics and Counterterrorism</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="work" class="section">
+            <h2>Work Experience</h2>
+            <div class="card-grid">
+                <div class="card work-card">
+                    <div class="work-header">
+                        <h3>Desktop Engineer</h3>
+                        <span class="tag">Public Education Sector</span>
+                    </div>
+                    <p>Delivered full-lifecycle IT troubleshooting, infrastructure support, and device maintenance across high-density end-user environments.</p>
+                </div>
+
+                <div class="card work-card">
+                    <div class="work-header">
+                        <h3>Technology Retail Specialist</h3>
+                        <span class="tag">Client Services</span>
+                    </div>
+                    <p>Translated complex technological concepts into accessible consumer solutions while honing client-facing communication and active listening skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <div class="card contact-card">
+                <div class="contact-item">
+                    <span class="icon">📞</span>
+                    <div>
+                        <strong>Phone</strong>
+                        <p><a href="tel:+6598339044">+65 98339044</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">✉️</span>
+                    <div>
+                        <strong>Email</strong>
+                        <p><a href="mailto:jaasir7@gmail.com">jaasir7@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📸</span>
+                    <div>
+                        <strong>Instagram</strong>
+                        <p><a href="https://instagram.com/sir.jaasir" target="_blank">@sir.jaasir</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jaasir. All rights reserved.</p>
+    </footer>
+
+    <!-- Interactive JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
+     
