@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio of [Your Name] — developer, designer, builder." />
+  <title>[Your Name] — Portfolio</title>
+
+  <!-- Optional: swap for your preferred font or remove -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">[Your Name]</a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" aria-pressed="false">Dark</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 id="hero-heading">Hi, I'm [Your Name]</h1>
+          <p class="lead">I build clean, maintainable web apps and delightful user experiences.</p>
+          <p>
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </p>
+        </div>
+
+        <div class="hero-card" aria-hidden="false">
+          <!-- Replace placeholder image with your photo or SVG -->
+          <img src="https://via.placeholder.com/320x320.png?text=Photo" alt="[Your Name]" class="profile-photo">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>Short intro about you — what you build, your focus, and what makes you different. Keep it 2–4 sentences.</p>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Project card template: copy/replace -->
+        <article class="project-card">
+          <h3 class="project-title">Project One</h3>
+          <p class="project-desc">A one-sentence description of the project and tech used.</p>
+          <p class="project-links">
+            <a href="#" class="link">Live</a>
+            <a href="#" class="link">Code</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-title">Project Two</h3>
+          <p class="project-desc">Short description and impact or highlight.</p>
+          <p class="project-links">
+            <a href="#" class="link">Live</a>
+            <a href="#" class="link">Code</a>
+          </p>
+        </article>
+
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>JavaScript / TypeScript</li>
+        <li>React / Vue / Svelte</li>
+        <li>HTML & CSS — responsive design</li>
+        <li>Node, APIs, Databases</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>I'm available for freelance and full-time roles. Send a note — or use the email link below.</p>
+      <p>
+        <a class="btn" href="mailto:you@example.com">you@example.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> [Your Name]. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
