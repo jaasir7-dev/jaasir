@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaasir — Portfolio</title>
+<meta name="description" content="Muhammad Jaasir — ICT undergraduate at SUSS. An 8-bit terminal portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- boot screen -->
+<div id="boot" role="button" tabindex="0" aria-label="Start">
+  <h1>JAASIR-OS</h1>
+  <p>v2.0 &nbsp;·&nbsp; 8-BIT PORTFOLIO TERMINAL</p>
+  <p class="press">PRESS ANY KEY OR TAP TO START</p>
+</div>
+
+<div class="stage">
+
+  <!-- desktop (shown when every window is closed) -->
+  <section id="home" class="home" hidden>
+    <img class="portrait" src="avatar.png" alt="Pixel portrait of Jaasir" width="144" height="144">
+    <h1 class="banner">JAASIR</h1>
+    <p class="tag">ICT undergrad · cybersecurity grad · coding instructor</p>
+    <p class="hint">PICK AN APP BELOW</p>
+  </section>
+
+  <!-- terminal -->
+  <section class="win" id="win-terminal" data-app="terminal" aria-label="Terminal">
+    <header class="bar">
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="title">visitor@jaasir-os: ~</div>
+      <button id="snd" type="button" aria-pressed="true" title="Toggle sound">SFX ON</button>
+      <button class="x" type="button" data-close title="Close terminal (Esc)" aria-label="Close terminal">X</button>
+    </header>
+    <div class="screen" id="screen">
+      <div id="out" aria-live="polite"></div>
+      <div class="prompt-row">
+        <span class="ps1"><span class="u">visitor</span> <span class="p">~/jaasir</span> <span class="g">&gt;</span>&nbsp;</span><span id="typed"></span><span class="cursor"></span>
+        <input id="cmd" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Terminal input">
+      </div>
+    </div>
+    <nav class="chips" id="chips" aria-label="Quick commands">
+      <button>help</button><button>about</button><button>experience</button><button>education</button>
+      <button>skills</button><button>awards</button><button>contact</button><button>neofetch</button><button>cv</button><button>clear</button>
+    </nav>
+  </section>
+
+  <!-- CV viewer -->
+  <section class="win" id="win-cv" data-app="cv" aria-label="CV viewer" hidden>
+    <header class="bar">
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="title">Jaasir_Resume.pdf</div>
+      <a class="btn" href="Jaasir_Resume.pdf" target="_blank" rel="noopener">OPEN PDF</a>
+      <button class="x" type="button" data-close title="Close (Esc)" aria-label="Close CV">X</button>
+    </header>
+    <div class="paper" tabindex="0">
+      <img src="cv-1.png" alt="Jaasir's CV, page 1" width="910" height="1287" loading="lazy">
+      <img src="cv-2.png" alt="Jaasir's CV, page 2" width="910" height="1287" loading="lazy">
+    </div>
+  </section>
+
+  <!-- dino game -->
+  <section class="win" id="win-dino" data-app="dino" aria-label="Dino Run game" hidden>
+    <header class="bar">
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="title">DINO RUN</div>
+      <button class="x" type="button" data-close title="Close (Esc)" aria-label="Close game">X</button>
+    </header>
+    <div class="game">
+      <canvas id="dino" width="600" height="200" aria-label="Dino Run. Press space or tap to jump."></canvas>
+      <p class="keys">SPACE / UP / TAP = JUMP</p>
+    </div>
+  </section>
+
+  <!-- trivia game -->
+  <section class="win" id="win-trivia" data-app="trivia" aria-label="Tech trivia game" hidden>
+    <header class="bar">
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="title">TECH TRIVIA</div>
+      <button class="x" type="button" data-close title="Close (Esc)" aria-label="Close game">X</button>
+    </header>
+    <div class="trivia" id="trivia"></div>
+  </section>
+
+</div>
+
+<!-- dock -->
+<nav class="dock" id="dock" aria-label="Apps">
+  <button data-app="terminal" aria-current="true"><i class="i-term"></i>TERMINAL</button>
+  <button data-app="cv"><i class="i-cv"></i>MY CV</button>
+  <button data-app="dino"><i class="i-dino"></i>DINO RUN</button>
+  <button data-app="trivia"><i class="i-quiz"></i>TRIVIA</button>
+</nav>
+
+<script src="script.js"></script>
+<script src="games.js"></script>
+</body>
+</html>
